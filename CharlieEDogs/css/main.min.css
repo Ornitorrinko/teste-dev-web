@@ -1,0 +1,31 @@
+a{color:#333}
+a:hover{color:#00aeef}
+.header{width:100%;border-bottom:1px solid #fc0;padding:20px 0}
+.menu-topo{margin-top:30px;text-transform:uppercase}
+.menu-topo>li>a{color:#333}
+.menu-topo>li>a:hover,.menu-topo .nav>li>a:focus{background-color:#fc0;color:#333;border-radius:0}
+.buscar{margin-top:20px}
+.buscar input,.buscar button{border-color:#00aeef;height:60px;border-radius:0}
+.buscar input{font-size:24px;background-color:#fafafa}
+.buscar button{background-color:#00aeef;color:#fff;width:60px;padding:0}
+.buscar button:hover,.buscar button:active,.buscar button:focus{background-color:#fc0}
+.buscar button span{font-size:40px;line-height:33px}
+.content{width:100%;background-color:#fafafa;padding:30px 0}
+.box-cachorro{position:relative}
+.box-cachorro img{opacity:.7;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;position:relative;width:100%}
+.box-cachorro:hover img{opacity:1;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.box-cachorro div.btn-foto{opacity:0;display:none;background-color:#fc0;color:#333;font-family:'Amatic SC',cursive;font-weight:700;text-align:center;padding:7px;width:90%;font-size:32px;position:relative;bottom:-70px;left:5%;-webkit-transition:bottom .9s ease-in-out;-moz-transition:bottom .9s ease-in-out;-ms-transition:bottom .9s ease-in-out;-o-transition:bottom .9s ease-in-out;transition:bottom .9s ease-in-out}
+.box-cachorro:hover div.btn-foto{opacity:1;display:block;position:absolute;bottom:10px;-webkit-transition:bottom .9s ease-in-out;-moz-transition:bottom .9s ease-in-out;-ms-transition:bottom .9s ease-in-out;-o-transition:bottom .9s ease-in-out;transition:bottom .9s ease-in-out}
+.box-cachorro span.titulo-cachorro{font-family:'Amatic SC',cursive;font-weight:700;font-size:32px;color:#333;float:left}
+.box-cachorro span.detalhes-cachorro{font-size:15px;float:right;text-align:right;color:#333}
+.footer{width:100%;border-top:1px solid #fc0;padding:20px 0}
+.lista-links .list-group-item{border:0;padding:5px 0;font-size:12px}
+.footer p.telefone{margin-top:-10px;font-size:12px}
+.iframe-cachorro{padding:20px}
+.iframe-cachorro .descricao-cachorro{line-height:1.5em;font-size:14px;color:#333;width:60%}
+.descricao-cachorro h1{font-family:'Amatic SC',cursive;color:#333;font-size:48px;font-weight:700;margin-top:0}
+.pricetag{font-family:'Amatic SC',cursive;font-weight:700;color:#fff;font-size:52px;background-color:#00aeef;padding:0 10px 0 30px;position:relative}
+.pricetag:before{content:'';width:0;height:0;position:absolute;left:-10px;top:33%;display:block;border-radius:25px;border:12px solid #fff;z-index:2}
+.pricetag:after{content:'';width:0;height:0;position:absolute;right:100%;top:50%;border:33px solid transparent;border-right-color:#00aeef;margin-top:-33px;z-index:1}
+.descricao-cachorro .btn{font-family:'Amatic SC',cursive;color:#333;background-color:#fc0;font-size:45px;font-weight:700;padding:0;border-radius:0;margin:20px 0;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.descricao-cachorro .btn:hover{background-color:#e6b800;color:#fff;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out}

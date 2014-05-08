@@ -1,0 +1,230 @@
+$amarelo: #ffcc00;
+$azul: #00aeef;
+$preto: #333333;
+$cinza: #fafafa;
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+a {
+	color: $preto;
+}
+
+a:hover {
+	color: $azul;
+}
+
+.header {
+	width:100%;
+	border-bottom: 1px solid $amarelo;
+	padding: 20px 0;
+}
+
+.menu-topo {
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+.menu-topo>li>a {
+	color: $preto;
+}
+
+.menu-topo>li>a:hover, .menu-topo .nav>li>a:focus {
+	background-color: $amarelo;
+	color: $preto;
+	border-radius: 0;
+}
+
+.buscar {
+	margin-top: 20px;
+}
+
+.buscar input, .buscar button {
+	border-color: $azul;
+	height: 60px;
+	border-radius: 0;	
+}
+
+.buscar input {
+	font-size: 24px;
+	background-color: $cinza;
+}
+
+.buscar button {
+	background-color: $azul;
+	color: #ffffff;
+	width: 60px;
+	padding: 0;
+}
+
+.buscar button:hover,
+.buscar button:active,
+.buscar button:focus {
+	background-color: $amarelo;
+}
+
+.buscar button span {
+	font-size: 40px;
+	line-height: 33px;
+}
+
+.content {
+	width: 100%;
+	background-color: $cinza;
+	padding: 30px 0;
+}
+
+.box-cachorro {
+	position: relative;
+}
+
+.box-cachorro img {
+	opacity: .7;
+	@include transition(all, 0.5s, ease-in-out);
+	position: relative;
+	width: 100%;
+}
+
+.box-cachorro:hover img {
+	opacity: 1;
+	@include transition(all, 0.5s, ease-in-out);
+}
+
+.box-cachorro div.btn-foto {
+	opacity: 0;
+	display: none;
+	background-color: $amarelo;
+	color: $preto;
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+	text-align: center;
+	padding: 7px;
+	width: 90%;
+	font-size: 32px;
+	position: relative;
+	bottom: -70px;
+	left: 5%;
+	@include transition(bottom, 0.9s, ease-in-out);
+} 
+
+.box-cachorro:hover div.btn-foto {
+	opacity: 1;
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	@include transition(bottom, 0.9s, ease-in-out);
+}
+
+.box-cachorro span.titulo-cachorro {
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+	font-size: 32px;
+	color: $preto;
+	float: left;
+}
+
+.box-cachorro span.detalhes-cachorro {
+	font-size: 15px;
+	float: right;
+	text-align: right;
+	color: $preto;
+}
+
+.footer {
+	width: 100%;
+	border-top: 1px solid $amarelo;
+	padding: 20px 0;
+}
+
+.footer ul.lista-links {
+}
+
+.lista-links .list-group-item {
+	border: 0;
+	padding: 5px 0;
+	font-size: 12px;
+}
+
+.footer p.telefone {
+	margin-top: -10px;
+	font-size: 12px;
+}
+
+/* popover cachorrinhos */
+.iframe-cachorro {
+	padding: 20px;
+}
+
+.iframe-cachorro .descricao-cachorro {
+	line-height: 1.5em;
+	font-size: 14px;
+	color: $preto;
+	width: 60%;
+}
+
+.descricao-cachorro h1 {
+	font-family: 'Amatic SC', cursive;
+	color: $preto;
+	font-size: 48px;
+	font-weight: 700;	
+	margin-top: 0;
+}
+
+.pricetag {
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 52px;
+	background-color: $azul;
+	padding: 0 10px 0 30px;
+	position: relative;
+}
+
+.pricetag:before {
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: -10px;
+	top: 33%;
+	display: block;
+	border-radius: 25px;
+	border: 12px solid #ffffff;
+	z-index: 2;
+}
+
+.pricetag:after {
+	content:'';
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: 100%;
+	top:50%;
+	border: 33px solid transparent;
+	border-right-color: $azul;
+	margin-top: -33px;
+	z-index: 1;
+}
+
+.descricao-cachorro .btn {
+	font-family: 'Amatic SC', cursive;
+	color: $preto;
+	background-color: $amarelo;
+	font-size: 45px;
+	font-weight: 700;
+	padding: 0;
+	border-radius: 0;
+	margin: 20px 0;
+	@include transition(all, 0.5s, ease-in-out);
+}
+
+.descricao-cachorro .btn:hover {
+	background-color: darken($amarelo, 5);
+	color: #ffffff;
+	@include transition(all, 0.5s, ease-in-out);
+}
