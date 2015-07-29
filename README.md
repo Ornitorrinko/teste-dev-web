@@ -17,11 +17,11 @@ No checkout todos os dados da compra, raça, quantidade, valor, dados do comprad
 
 Após o checkout o sistema deve retornar para a página inicial com o carrinho de compras "zerado".
 
-Você deve usar algumas dessas tecnologias:
-- Nodejs
-- Ruby on Rails
-- Python Django
-- Java
+Você deve usar para o Frontend:
+- AngularJS
+
+Você deve usar para Backend:
+- NodeJS
 
 Você deve usar alguns desses bancos de dados:
 - MySQL
