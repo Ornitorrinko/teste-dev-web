@@ -17,16 +17,23 @@ No checkout todos os dados da compra, raça, quantidade, valor, dados do comprad
 
 Após o checkout o sistema deve retornar para a página inicial com o carrinho de compras "zerado".
 
-Você deve usar para o Frontend:
-- AngularJS
+Você deve usar para o Frontend um desses frameworks:
+- AngularJs
+- VueJs
+- ReactJs
 
-Você deve usar para Backend:
+Você deve usar para Backend uma dessas tecnologias:
 - NodeJS
+- Ruby on Rails
+- .NET C#
+- Go
 
 Você deve usar alguns desses bancos de dados:
 - MySQL
 - PostgreSQL
+- Cassandra
 - MongoDB
+- DynamoDB
 
 Você deve escrever testes de unidade e integração.
 
